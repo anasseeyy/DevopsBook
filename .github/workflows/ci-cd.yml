@@ -1,10 +1,8 @@
-name: CI/CD Pipeline
-
 on:
   push:
-    branches: [ main ]
+    branches: main
   pull_request:
-    branches: [ main ]
+    branches: main
 
 env:
   IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/fastapi-cicd-demo
